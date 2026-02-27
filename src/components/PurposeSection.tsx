@@ -5,12 +5,10 @@ import { CheckCircle } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
 const deliverables = [
-  "Rules: Produce a set of rules for algorithmic efficiency benchmarking, specifying initial 2-3 benchmarks.",
-  "Harness: Produce a testing harness executable on commonly available clouds using standardized frameworks.",
-  "Baseline implementations: Produce baseline training algorithms and model implementations for each benchmark, serving as submission skeletons.",
-  "Call for participation.",
-  "Initial Submission round: Once rules and harness/references are developed, call for participation by the research/industry community.",
-  "Additional submission rounds on a regular schedule.",
+  "Evolutionary Coding Agents familiarity: Investigate and experiment with evolutionary coding agents like Openevolve, to gain experience using evolutionary coding agents.",
+  "Research questions: Pose a research question that interests you, getting the compute to research it and produce interesting results",
+  "Integration with TIG protocol: Design and prototype the integration of evolutionary discovery pipelines with TIG's verification and incentive mechanisms, enabling Algorithm Mining at scale.",
+  "Open source the finalised tool: For algorithm mining to take place at scale",
 ];
 
 export function PurposeSection() {
@@ -26,10 +24,13 @@ export function PurposeSection() {
             <Separator className="bg-stone-300" />
             <div className="space-y-6 pt-4">
               <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
-                We need a more scientifically sound methodology for evaluating training speedups due to new algorithms, including both new optimizers and new model architectures. Cutting edge machine learning (ML) models are exceeding the compute budgets of many researchers, and ML compute is becoming a larger and larger cost in industry.
+                Fundamental algorithm research is one of the highest-leverage activities in technology — yet it historically has been economically infeasible to commercial investment. Breakthroughs are unpredictable, timelines are long, and results are hard to monetise directly. Progress has depended almost entirely on government funding.
               </p>
               <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
-                To reduce the compute cost of ML research and practice, we need rigorous benchmarking of efficiency. Such benchmarks will guide us in selecting the best directions to evolve existing techniques and ultimately enable progress toward models that produce not only better results, but better results at lower cost.
+                Meanwhile, a new generation of evolutionary coding agents (AlphaEvolve, OpenEvolve, ShinkaEvolve) has demonstrated that AI systems can discover algorithms that outperform decades of human effort — from breaking 56-year-old records in matrix multiplication to achieving 5× speedups on systems research problems.c
+              </p>
+              <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
+                The Algorithm Mining Research Group exists to accelerate this transition. Researchers will work at the intersection of automated algorithm discovery and optimisation research, investigating key research questions needed to make open algorithm research self-sustaining.
               </p>
             </div>
           </FadeIn>

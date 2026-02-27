@@ -7,15 +7,15 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 const tracks = [
   {
     icon: Zap,
-    title: "Training Efficiency",
+    title: "Evolutionary Algorithm Discovery",
     description:
-      "Develop and benchmark novel training algorithms including optimizers, learning rate schedules, and architecture-specific improvements that reduce time-to-convergence without sacrificing model quality.",
+      "Develop, extend, and benchmark evolutionary coding agents — including prompt design, population management, LLM ensemble strategies, and evaluation frameworks — to improve the rate and quality of automated algorithm discovery across domains.",
   },
   {
     icon: Cpu,
-    title: "Inference Efficiency",
+    title: "Applied Experiments",
     description:
-      "Focus on post-training optimizations, quantization techniques, pruning methods, and inference-time compute reduction strategies for deploying efficient models in production environments.",
+      "Explore applying evolutionary coding agents across different research questions hosted on The Innovation Game platform — connecting automated discovery pipelines with TIG's decentralised protocol.",
   },
   {
     icon: Search,
@@ -34,7 +34,7 @@ export function ProgramTracksSection() {
             Program Tracks
           </h2>
           <p className="mt-4 text-lg text-stone-600 max-w-2xl mx-auto font-normal">
-            Three research tracks designed to advance algorithmic efficiency across the ML lifecycle
+            Three research tracks designed to advance automated algorithm discovery and its integration with open incentive systems.
           </p>
         </FadeIn>
 

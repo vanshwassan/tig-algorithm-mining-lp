@@ -7,21 +7,21 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
 const insights = [
   {
-    title: "AlgoPerf adds WebUI capabilities to make federated benchmarking more user-friendly",
-    description: "New interface simplifies submission process for algorithmic efficiency benchmarks.",
-    date: "December 9, 2025",
+    title: "OpenEvolve powers AI-Driven Research for Systems at UC Berkeley",
+    description: "Berkeley's Sky Computing Lab uses evolutionary coding agents to discover algorithms that outperform human-designed solutions across multiple systems domainsc.",
+    date: "October 9, 2025",
     gradient: "from-emerald-400 to-teal-500",
   },
   {
-    title: "Announcing the results of the inaugural AlgoPerf: Training Algorithms benchmark competition",
-    description: "Top performers demonstrate 3x training speedups on standard vision and NLP tasks.",
-    date: "August 1, 2024",
+    title: "AlphaEvolve breaks 56-year matrix multiplication record",
+    description: "DeepMind's evolutionary coding agent discovers faster algorithms for matrix multiplication and recovers 0.7% of Google's global compute resources.",
+    date: "May 1, 2025",
     gradient: "from-blue-400 to-indigo-500",
   },
   {
-    title: "Announcing the MLCommons AlgoPerf Training Algorithms Benchmark Competition",
-    description: "Open call for submissions to establish new standards in training efficiency.",
-    date: "November 28, 2023",
+    title: "The case for Algorithm Mining: open discovery with sustainable incentives",
+    description: "How TIG Foundation is building an economic engine for open algorithm research, combining evolutionary agents with decentralised verification and token rewards.",
+    date: "November 28, 2026",
     gradient: "from-violet-400 to-purple-500",
   },
 ];
@@ -56,7 +56,7 @@ export function InsightsSection() {
                     {insight.description}
                   </p>
                   <div className="flex items-center gap-2 text-xs text-stone-500 uppercase tracking-wider font-normal">
-                    <span>News</span>
+                    <span>Research</span>
                     <span className="w-1 h-1 rounded-full bg-stone-400" />
                     <span>{insight.date}</span>
                   </div>

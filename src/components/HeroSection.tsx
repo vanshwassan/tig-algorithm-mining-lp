@@ -13,13 +13,13 @@ export function HeroSection() {
           <div className="space-y-8 max-w-xl">
             <FadeIn delay={0.1} duration={0.7}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal text-stone-900 tracking-tight leading-[1.1]">
-                Algorithm Mining Fellowship by TIG Foundation
+                Algorithm Mining Research Group by TIG Foundation
               </h1>
             </FadeIn>
             
             <FadeIn delay={0.2} duration={0.6}>
               <p className="text-lg md:text-xl text-stone-600 leading-relaxed font-normal">
-                Rigorous benchmarking and reproducible algorithmic improvements for neural network training and inference efficiency.
+                Open research group advancing automated algorithm discovery through evolutionary coding agents and decentralised incentive mechanisms.
               </p>
             </FadeIn>
             
