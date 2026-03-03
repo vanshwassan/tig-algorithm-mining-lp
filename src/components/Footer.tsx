@@ -1,12 +1,15 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Github, MessageCircle, Twitter, Linkedin, Youtube } from "lucide-react";
 import { FadeIn } from "@/components/FadeIn";
 
-export function Footer() {
+interface FooterProps {
+  onOpenSignup: () => void;
+}
+
+export function Footer({ onOpenSignup }: FooterProps) {
   return (
     <footer className="bg-slate-900 text-white py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,10 +19,10 @@ export function Footer() {
             <div>
               <div className="mb-4">
                 <span className="text-2xl font-normal tracking-tight">
-                  Institute of Algorithm Mining
+                  Institute for
                 </span>
-                <span className="text-l font-light text-stone-400 ml-1">
-                  by TIG Foundation
+                <span className="text-2xl font-light text-stone-400 ml-1">
+                  Algorithm Mining
                 </span>
               </div>
               <p className="text-stone-400 text-sm font-normal">
@@ -28,32 +31,19 @@ export function Footer() {
             </div>
           </FadeIn>
 
-          {/* Right column - Newsletter */}
+          {/* Get Involved */}
           <FadeIn direction="right" delay={0.1}>
             <div>
-              <h3 className="text-base font-normal mb-2">Stay Updated</h3>
+              <h3 className="text-base font-normal mb-2">Get Involved</h3>
               <p className="text-stone-400 text-sm mb-4 font-normal">
-                Get the latest fellowship updates delivered fresh to your inbox
+                Join our community and stay updated on events, research, and opportunities.
               </p>
-              <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-                <Input
-                  type="email"
-                  placeholder="Email"
-                  className="flex-1 bg-white/10 border-stone-700 text-white placeholder:text-stone-500 rounded-lg focus-visible:ring-emerald-500 font-normal"
-                />
-                <Button
-                  type="submit"
-                  className="bg-emerald-100/80 hover:bg-emerald-200/80 text-emerald-900 border-0 rounded-lg px-6 font-normal transition-colors"
-                >
-                  Submit
-                </Button>
-              </form>
-              <p className="text-stone-500 text-xs mt-3 font-normal">
-                By submitting this form you agree to our{" "}
-                <a href="#" className="underline underline-offset-2 hover:text-stone-300">
-                  Privacy Policy
-                </a>
-              </p>
+              <Button
+                onClick={onOpenSignup}
+                className="bg-emerald-100/80 hover:bg-emerald-200/80 text-emerald-900 border-0 rounded-lg px-6 font-normal transition-colors"
+              >
+                Get Involved
+              </Button>
             </div>
           </FadeIn>
         </div>

@@ -9,19 +9,19 @@ const insights = [
   {
     title: "OpenEvolve powers AI-Driven Research for Systems at UC Berkeley",
     description: "Berkeley's Sky Computing Lab uses evolutionary coding agents to discover algorithms that outperform human-designed solutions across multiple systems domainsc.",
-    date: "October 9, 2025",
+    date: "October 2025",
     gradient: "from-emerald-400 to-teal-500",
   },
   {
     title: "AlphaEvolve breaks 56-year matrix multiplication record",
     description: "DeepMind's evolutionary coding agent discovers faster algorithms for matrix multiplication and recovers 0.7% of Google's global compute resources.",
-    date: "May 1, 2025",
+    date: "May 2025",
     gradient: "from-blue-400 to-indigo-500",
   },
   {
-    title: "The case for Algorithm Mining: open discovery with sustainable incentives",
-    description: "How TIG Foundation is building an economic engine for open algorithm research, combining evolutionary agents with decentralised verification and token rewards.",
-    date: "November 28, 2026",
+    title: "Hiverge’s AI Algorithm Discovery wins Airbus’ planning challenge",
+    description: "using its Hive discovery engine, Hiverge automatically evolved a planning algorithm that outperformed state‑of‑the‑art methods, winning Airbus’s competitions.",
+    date: "November 2025",
     gradient: "from-violet-400 to-purple-500",
   },
 ];
@@ -40,7 +40,7 @@ export function InsightsSection() {
           {insights.map((insight) => (
             <StaggerItem key={insight.title}>
               <Card className="border-0 shadow-none bg-transparent cursor-pointer group">
-                {/* Image placeholder with gradient */}
+                {/* img placeholder with gradient */}
                 <div className={`aspect-video rounded-lg bg-gradient-to-br ${insight.gradient} mb-4 relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
                   <div className="absolute inset-0 flex items-center justify-center">

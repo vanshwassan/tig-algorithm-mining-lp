@@ -9,7 +9,7 @@ export function ApplyCTASection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 tracking-tight mb-4">
-            Join the Algorithm Mining Fellowship
+            Join the Institute for Algorithm Mining
           </h2>
         </FadeIn>
         <FadeIn delay={0.1}>

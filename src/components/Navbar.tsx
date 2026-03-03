@@ -4,17 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Search, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
+
 const navLinks = [
   { label: "Overview", href: "#overview" },
-  { label: "Program", href: "#program" },
-  { label: "Publications", href: "#publications" },
+  // { label: "Program", href: "#program" },
+  // { label: "Publications", href: "#publications" },
   { label: "Schedule", href: "#schedule" },
-  { label: "Mentors", href: "#mentors" },
-  { label: "Insights", href: "#insights" },
-  { label: "Apply", href: "#apply" },
+    // { label: "Insights", href: "#insights" },
+  { label: "Committee", href: "#committee" },
+  // { label: "Apply", href: "#apply" },
 ];
 
-export function Navbar() {
+interface NavbarProps {
+  onOpenSignup: () => void;
+}
+
+export function Navbar({ onOpenSignup }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -23,7 +28,6 @@ export function Navbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      // Hide when scrolling down, show when scrolling up
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false);
       } else {
@@ -59,12 +63,12 @@ export function Navbar() {
               onClick={() => scrollToSection("#overview")}
               className="flex items-center gap-3 text-lg font-medium text-stone-900 tracking-tight hover:text-stone-700 transition-colors"
             >
-              <img
+              {/* <img
                 src="/LOGO_TIG_PICTURE_CLEAN_OFFWHITE.svg"
                 alt="Logo"
                 className="h-10 w-auto brightness-0"
-              />
-              <span>Institute for Algorithm Mining</span>
+              /> */}
+              <span>Institute for <span className="font-light text-stone-400">Algorithm Mining</span></span>
             </button>
           </div>
 
@@ -84,14 +88,14 @@ export function Navbar() {
           {/* Right side buttons */}
           <div className="flex items-center space-x-3">
             <Button
-              onClick={() => scrollToSection("#apply")}
+              onClick={onOpenSignup}
               className="bg-emerald-100/80 hover:bg-emerald-200/80 text-emerald-900 border-0 rounded-full px-6 text-sm font-normal transition-colors"
             >
               Apply
             </Button>
-            <button className="p-2.5 rounded-full bg-stone-900 text-white hover:bg-stone-800 transition-colors">
+            {/* <button className="p-2.5 rounded-full bg-stone-900 text-white hover:bg-stone-800 transition-colors">
               <Search className="h-4 w-4" />
-            </button>
+            </button> */}
             
             {/* Mobile menu button */}
             <button
@@ -124,6 +128,7 @@ export function Navbar() {
           </div>
         </div>
       )}
+
     </nav>
   );
 }

@@ -4,27 +4,27 @@ import { Separator } from "@/components/ui/separator";
 import { Globe } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
-const mentors = [
+const committeeMembers = [
   {
     name: "Dr. Daniel Adams",
-    email: "dan@algomining.org",
-    bio: "Dr. Daniel Adams holds an MSc in Mathematics from the University of Bristol and a PhD from the University of Edinburgh, where he specialised in Stochastic Analysis and Optimal Transport. He was awarded a prestigious Maxwell Research Fellowship jointly by the University of Edinburgh and Heriot-Watt University, and later held a postdoctoral position at Université Paris Dauphine.",
+    email: "daniel@the-innovation-game.com",
+    bio: "Dr. Daniel Adams is a Mathematics Researcher at The Innovation Game. He holds an MSc in Mathematics from the University of Bristol and a PhD from the University of Edinburgh, where he specialised in Stochastic Analysis and Optimal Transport. He was awarded a prestigious Maxwell Research Fellowship jointly by the University of Edinburgh and Heriot-Watt University, and later held a postdoctoral position at Université Paris Dauphine.",
   },
-  {
-    name: "Prof. Michael Rodriguez",
-    email: "m.rodriguez@algorithm-mining.org",
-    bio: "Prof. Michael Rodriguez is an Associate Professor at Stanford University's Computer Science department, specializing in systems for machine learning. He holds a Ph.D. from UC Berkeley and has published extensively on distributed training and model parallelism. He previously led ML infrastructure teams at Meta.",
-  },
-  {
-    name: "Dr. Aisha Patel",
-    email: "aisha.patel@algorithm-mining.org",
-    bio: "Dr. Aisha Patel is a Principal Researcher at Microsoft Research, Redmond, where she works on neural architecture search and automated ML systems. She completed her Ph.D. at Carnegie Mellon University and has been instrumental in developing efficiency benchmarks for the ML community.",
-  },
+//   {
+//     name: "Prof. Michael Rodriguez",
+//     email: "m.rodriguez@algorithm-mining.org",
+//     bio: "Prof. Michael Rodriguez is an Associate Professor at Stanford University's Computer Science department, specializing in systems for machine learning. He holds a Ph.D. from UC Berkeley and has published extensively on distributed training and model parallelism. He previously led ML infrastructure teams at Meta.",
+//   },
+//   {
+//     name: "Dr. Aisha Patel",
+//     email: "aisha.patel@algorithm-mining.org",
+//     bio: "Dr. Aisha Patel is a Principal Researcher at Microsoft Research, Redmond, where she works on neural architecture search and automated ML systems. She completed her Ph.D. at Carnegie Mellon University and has been instrumental in developing efficiency benchmarks for the ML community.",
+//   },
 ];
 
-export function MentorsSection() {
+export function CommitteeSection() {
   return (
-    <section id="mentors" className="py-16 md:py-20 lg:py-24 bg-white">
+    <section id="committee" className="py-16 md:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 tracking-tight mb-4">
@@ -34,7 +34,7 @@ export function MentorsSection() {
         
         <FadeIn delay={0.1}>
           <p className="text-stone-600 mb-12 font-normal">
-            The Institute for Algorithm Mining is seeking additional committee members. If you’d like to get involved, reach out to us at{" "}
+            The Institute for Algorithm Mining is seeking additional committee members. If you would like to get involved, reach out to us at{" "}
             <a
               href="mailto:committee@algomining.org"
               className="text-stone-900 underline underline-offset-2 hover:text-stone-700"
@@ -46,22 +46,22 @@ export function MentorsSection() {
         </FadeIn>
 
         <StaggerContainer staggerDelay={0.12} className="space-y-0">
-          {mentors.map((mentor, index) => (
-            <StaggerItem key={mentor.name}>
+          {committeeMembers.map((member, index) => (
+            <StaggerItem key={member.name}>
               <div>
                 <div className="py-8">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
                     {/* Name and email column */}
                     <div className="md:col-span-1">
                       <h3 className="text-xl font-normal text-stone-900 mb-2">
-                        {mentor.name}
+                        {member.name}
                       </h3>
                       <div className="flex items-center gap-2">
                         <a
-                          href={`mailto:${mentor.email}`}
+                          href={`mailto:${member.email}`}
                           className="text-sm text-stone-600 underline underline-offset-2 hover:text-stone-900 font-normal"
                         >
-                          {mentor.email}
+                          {member.email}
                         </a>
                         <a
                           href="#"
@@ -76,12 +76,12 @@ export function MentorsSection() {
                     {/* Bio column */}
                     <div className="md:col-span-2">
                       <p className="text-stone-700 leading-relaxed font-normal">
-                        {mentor.bio}
+                        {member.bio}
                       </p>
                     </div>
                   </div>
                 </div>
-                {index < mentors.length - 1 && (
+                {index < committeeMembers.length - 1 && (
                   <Separator className="bg-stone-200" />
                 )}
               </div>
