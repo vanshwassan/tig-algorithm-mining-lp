@@ -16,14 +16,14 @@ export function Footer() {
             <div>
               <div className="mb-4">
                 <span className="text-2xl font-normal tracking-tight">
-                  AM
+                  Institute of Algorithm Mining
                 </span>
-                <span className="text-2xl font-light text-stone-400 ml-1">
-                  Fellowship
+                <span className="text-l font-light text-stone-400 ml-1">
+                  by TIG Foundation
                 </span>
               </div>
               <p className="text-stone-400 text-sm font-normal">
-                Advancing algorithmic efficiency through rigorous benchmarking and open collaboration.
+                Coordinating research, knowledge sharing, and networking around AI-driven algorithm discovery.
               </p>
             </div>
           </FadeIn>
@@ -64,7 +64,7 @@ export function Footer() {
         <FadeIn delay={0.2}>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="flex flex-wrap items-center gap-4 text-xs text-stone-500 font-normal">
-              <span>&copy; 2026 Algorithm Mining Fellowship</span>
+              <span>&copy; 2026 Institute for Algorithm Mining</span>
               <a href="#" className="hover:text-stone-300 underline underline-offset-2">
                 Privacy Policy
               </a>

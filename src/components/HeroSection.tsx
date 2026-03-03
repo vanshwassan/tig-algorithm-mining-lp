@@ -13,13 +13,13 @@ export function HeroSection() {
           <div className="space-y-8 max-w-xl">
             <FadeIn delay={0.1} duration={0.7}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal text-stone-900 tracking-tight leading-[1.1]">
-                Algorithm Mining Research Group by TIG Foundation
+                Institute for Algorithm Mining by TIG Foundation
               </h1>
             </FadeIn>
             
             <FadeIn delay={0.2} duration={0.6}>
               <p className="text-lg md:text-xl text-stone-600 leading-relaxed font-normal">
-                Open research group advancing automated algorithm discovery through evolutionary coding agents and decentralised incentive mechanisms.
+                Coordinating research, knowledge sharing, and networking around AI-driven algorithm discovery.
               </p>
             </FadeIn>
             
@@ -28,15 +28,15 @@ export function HeroSection() {
                 <Button
                   className="bg-emerald-100/80 hover:bg-emerald-200/80 text-emerald-900 border-0 rounded-full px-8 py-6 text-base font-normal transition-colors"
                 >
-                  Apply Now
+                  Join Now
                 </Button>
-                <Button
+                {/* <Button
                   variant="outline"
                   className="rounded-full px-6 py-6 text-base font-normal border-stone-300 text-stone-700 hover:bg-stone-50 transition-colors"
                 >
                   <FileText className="h-4 w-4 mr-2" />
                   Program PDF
-                </Button>
+                </Button> */}
               </div>
             </FadeIn>
             

@@ -15,7 +15,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Algorithm Mining Fellowship",
+  title: "Institute for Algorithm Mining",
   description: "Rigorous benchmarking and reproducible algorithmic improvements for neural network training and inference efficiency.",
 };
 

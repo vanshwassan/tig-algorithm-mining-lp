@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { label: "Overview", href: "#overview" },
   { label: "Program", href: "#program" },
-  { label: "Deliverables", href: "#deliverables" },
+  { label: "Publications", href: "#publications" },
   { label: "Schedule", href: "#schedule" },
   { label: "Mentors", href: "#mentors" },
   { label: "Insights", href: "#insights" },
@@ -64,7 +64,7 @@ export function Navbar() {
                 alt="Logo"
                 className="h-10 w-auto brightness-0"
               />
-              <span>Algorithm Mining Fellowship</span>
+              <span>Institute for Algorithm Mining</span>
             </button>
           </div>
 

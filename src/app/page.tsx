@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { PurposeSection } from "@/components/PurposeSection";
 import { ProgramTracksSection } from "@/components/ProgramTracksSection";
+import { PublicationsSection } from "@/components/PublicationsSection";
 import { MeetingScheduleSection } from "@/components/MeetingScheduleSection";
 import { InsightsSection } from "@/components/InsightsSection";
 import { MentorsSection } from "@/components/MentorsSection";
@@ -14,7 +15,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PurposeSection />
-      <ProgramTracksSection />
+      {/* <ProgramTracksSection /> */}
+      {/* <PublicationsSection /> */}
       <MeetingScheduleSection />
       <InsightsSection />
       <MentorsSection />

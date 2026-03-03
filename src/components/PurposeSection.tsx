@@ -1,14 +1,27 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { CheckCircle } from "lucide-react";
+import { Mic, Users, Building2 } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
-const deliverables = [
-  "Evolutionary Coding Agents familiarity: Investigate and experiment with evolutionary coding agents like Openevolve, to gain experience using evolutionary coding agents.",
-  "Research questions: Pose a research question that interests you, getting the compute to research it and produce interesting results",
-  "Integration with TIG protocol: Design and prototype the integration of evolutionary discovery pipelines with TIG's verification and incentive mechanisms, enabling Algorithm Mining at scale.",
-  "Open source the finalised tool: For algorithm mining to take place at scale",
+const communityFeatures = [
+  {
+    icon: Mic,
+    title: "Speaker events",
+    description: "Featuring leading researchers and organizations at the cutting edge of AI-driven discovery.",
+  },
+  {
+    icon: Users,
+    title: "Focused working groups",
+    description: "Addressing research questions and/or developing tooling.",
+  },
+  {
+    icon: Building2,
+    title: "Industry connections",
+    description: "Enabling companies to turn AI-driven algorithm discoveries into tangible results.",
+  },
 ];
 
 export function PurposeSection() {
@@ -19,41 +32,72 @@ export function PurposeSection() {
           {/* Purpose Column */}
           <FadeIn direction="left" className="space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 tracking-tight">
-              Purpose
+              Our Purpose
             </h2>
             <Separator className="bg-stone-300" />
             <div className="space-y-6 pt-4">
               <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
-                Fundamental algorithm research is one of the highest-leverage activities in technology — yet it historically has been economically infeasible to commercial investment. Breakthroughs are unpredictable, timelines are long, and results are hard to monetise directly. Progress has depended almost entirely on government funding.
+                Recent breakthroughs in AI-driven algorithm discovery - including AlphaEvolve, OpenEvolve, and ShinkaEvolve - have shown that AI systems can outperform decades of human effort. From breaking a 56-year-old record in matrix multiplication to achieving 5× speedups on systems research problems, these advances signal a future where algorithm development is largely AI-driven.
               </p>
               <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
-                Meanwhile, a new generation of evolutionary coding agents (AlphaEvolve, OpenEvolve, ShinkaEvolve) has demonstrated that AI systems can discover algorithms that outperform decades of human effort — from breaking 56-year-old records in matrix multiplication to achieving 5× speedups on systems research problems.c
-              </p>
-              <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
-                The Algorithm Mining Research Group exists to accelerate this transition. Researchers will work at the intersection of automated algorithm discovery and optimisation research, investigating key research questions needed to make open algorithm research self-sustaining.
+                The Institute for Algorithm Mining accelerates this transition by building a global community that fosters collaboration and knowledge sharing:
               </p>
             </div>
-          </FadeIn>
 
-          {/* Deliverables Column */}
-          <FadeIn direction="right" delay={0.1} className="space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 tracking-tight">
-              Deliverables
-            </h2>
-            <Separator className="bg-stone-300" />
-            <div className="pt-4">
-              <StaggerContainer staggerDelay={0.08} className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
-                {deliverables.map((item, index) => (
-                  <StaggerItem key={index}>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm md:text-base text-stone-700 leading-relaxed font-normal">
-                        {item}
-                      </span>
-                    </li>
+            {/* Community Features - Under Our Purpose */}
+            <div className="pt-6">
+              <StaggerContainer staggerDelay={0.1} className="space-y-5">
+                {communityFeatures.map((feature) => (
+                  <StaggerItem key={feature.title}>
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                        <feature.icon className="h-5 w-5 text-emerald-700" />
+                      </div>
+                      <div>
+                        <h3 className="text-base font-normal text-stone-900 mb-1">
+                          {feature.title}
+                        </h3>
+                        <p className="text-sm text-stone-600 font-normal">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </div>
                   </StaggerItem>
                 ))}
               </StaggerContainer>
+            </div>
+          </FadeIn>
+
+          {/* Who should join Column */}
+          <FadeIn direction="right" delay={0.1} className="space-y-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 tracking-tight">
+              Who should join
+            </h2>
+            <Separator className="bg-stone-300" />
+            <div className="pt-4 space-y-6">
+              <p className="text-base md:text-lg text-stone-700 leading-relaxed font-normal">
+                Anyone interested in exploring the frontier of AI-driven algorithm discovery - whether researchers, engineers, industry practitioners, or enthusiasts.
+              </p>
+              
+              {/* Subscribe CTA */}
+              <div className="pt-4">
+                <p className="text-sm text-stone-500 font-normal mb-4">
+                  Subscribe to stay informed about our events and initiatives:
+                </p>
+                <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="flex-1 bg-white border-stone-200 text-stone-900 placeholder:text-stone-400 rounded-full px-5 py-5 font-normal focus-visible:ring-emerald-500"
+                  />
+                  <Button
+                    type="submit"
+                    className="bg-emerald-100/80 hover:bg-emerald-200/80 text-emerald-900 border-0 rounded-full px-6 py-5 font-normal transition-colors whitespace-nowrap"
+                  >
+                    Subscribe
+                  </Button>
+                </form>
+              </div>
             </div>
           </FadeIn>
         </div>

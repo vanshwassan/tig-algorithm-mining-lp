@@ -6,9 +6,9 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/FadeIn";
 
 const mentors = [
   {
-    name: "Dr. Sarah Chen",
-    email: "sarah.chen@algorithm-mining.org",
-    bio: "Dr. Sarah Chen is a Senior Research Scientist at DeepMind, London, where she leads research on efficient training algorithms. She holds a Ph.D. in Computer Science from MIT and previously worked on large-scale optimization at Google Brain. Her work focuses on reducing the computational cost of training large neural networks.",
+    name: "Dr. Daniel Adams",
+    email: "dan@algomining.org",
+    bio: "Dr. Daniel Adams holds an MSc in Mathematics from the University of Bristol and a PhD from the University of Edinburgh, where he specialised in Stochastic Analysis and Optimal Transport. He was awarded a prestigious Maxwell Research Fellowship jointly by the University of Edinburgh and Heriot-Watt University, and later held a postdoctoral position at Université Paris Dauphine.",
   },
   {
     name: "Prof. Michael Rodriguez",
@@ -28,18 +28,18 @@ export function MentorsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 tracking-tight mb-4">
-            Fellowship Mentors
+            Committee Members
           </h2>
         </FadeIn>
         
         <FadeIn delay={0.1}>
           <p className="text-stone-600 mb-12 font-normal">
-            To contact all fellowship mentors email{" "}
+            The Institute for Algorithm Mining is seeking additional committee members. If you’d like to get involved, reach out to us at{" "}
             <a
-              href="mailto:mentors@algorithm-mining.org"
+              href="mailto:committee@algomining.org"
               className="text-stone-900 underline underline-offset-2 hover:text-stone-700"
             >
-              mentors@algorithm-mining.org
+              committee@algomining.org
             </a>
             .
           </p>
